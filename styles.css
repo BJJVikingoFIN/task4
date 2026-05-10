@@ -1,0 +1,38 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+.grid-item {
+  background-color: rgb(111, 0, 255);
+  padding: 20px;
+  text-align: center;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+ 
+.box {
+  background-color: rgb(255, 2, 200);
+  padding: 20px;
+  text-align: center;
+}
+.responsive-box {
+  padding: 20px;
+  text-align: center;
+}
+ 
+@media (max-width: 650px) {
+  .responsive-box {
+    background-color: rgb(252, 2, 2);
+  }
+}
+ 
+@media (min-width: 651px) {
+  .responsive-box {
+    background-color: rgb(70, 145, 55);
+  }
+}
+ 
